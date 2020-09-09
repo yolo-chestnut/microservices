@@ -8,6 +8,7 @@ spring:
 dubbo:
   application:
     name: provider1
+    logger: slf4j
   scan:
     base-packages: priv.ms.dubbo.provider1.service
   protocol:

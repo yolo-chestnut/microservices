@@ -8,6 +8,7 @@ spring:
 dubbo:
   application:
     name: consumer1
+    logger: slf4j
   registry:
     address: zookeeper://127.0.0.1:2181
-    file: classpath:/dubbo-cache/${spring.application.name}/dubbo.cache
+    file: ${user.dir}/dubbo-cache/${spring.application.name}/dubbo.cache
